@@ -33,14 +33,21 @@
 
 ideas
 =========
-steps to complete:
-    1. Create II MapReduce program
-    2. Write search program
-    3. Find way to display context for top 3 results
-    4. Make UI (connect to the MR program)
-      * If we write MR in Python, should be able to use a simple Flask app, or similar to do this from a web-based UI without too much trouble. And can run that locally.
+steps to complete:  
+    1. Create II MapReduce program  
+    2. Write search program  
+    3. Find way to display context for top 3 results  
+    4. Make UI (connect to the MR program)  
+        -  If we write MR in Python, should be able to use a simple Flask app, or similar to do this from a web-based UI without too much trouble. And can run that locally.
 
 questions
 ---------
   * Need to automate setup of hadoop somehow to connect it to a UI?
-    - If we use python/hadoop streaming, we should just need to include the `hadoop-streaming.jar` file, and hard code that path in our code --> making it deployable. 
+    - If we use python/hadoop streaming, we should just need to include the `hadoop-streaming.jar` file, and hard code that path in our code --> making it deployable.
+
+
+need
+---------
+  * Script to automate sending files into the Job in proper format
+    - Extract filename as ID, and then split line by line `\n` or something similar.
+    - Either way, need to prepare data and get it in proper format for our program
