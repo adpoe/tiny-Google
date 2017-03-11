@@ -16,11 +16,18 @@ do
   # using sed, add the file name a s prefix to EVERY line of the entry
   sed -i -e 's/^/'$fname'\\t/' $entry
 
+  # add line numbers, using unix nl command
+  nl $entry > "$entry"_preprocessed
 done
 
-# remove intermediate files created by sed, now that we're done
+# remove intermediate files created by `sed` and `nl`, now that we're done
 rm "$dir"/*.txt-e
+rm "$dir"/*.txt
 
+# fix filenames, so that input filenames match output
+for f in "$dir"/*.txt_preprocessed; do
+  mv -- "$f" "${f%.txt_preprocessed}.txt"
+done
 
 # And now we have preprocessed files. Each book has its filename and then a tab in each line.
 # This will make processing each book with an ID in MapReduce very simple.

@@ -2,6 +2,8 @@
 """
 Inverted Index Mapper
     - Input:  Preprocessed Book.txt file. Must have doc_id\t as prefix for every line
+    - Test with;
+        * cat books_preprocess/AdventuresOfHuckleberryFinnByMarkTwain.txt | python inverted_index_mapper.py | sort -k1,1
 """
 
 from sys import stdin

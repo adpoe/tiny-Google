@@ -34,8 +34,8 @@
   * List of of books: `books.tar.gz`
 
 ### Implementation
-  1. Write a MapReduce program to develop a master inverted index data structure index the collection of documents in the books repo.
-  2. Write a MapReduce program that takes one or more keywords and then searches the index file and returns the postings associated with these keywords, sorted my some criteria (i.e. - number of occurrences of the these keywords (total)).
+  1. ~~Write a MapReduce program to develop a master inverted index data structure index the collection of documents in the books repo.~~
+  2. Write a MapReduce program that takes one or more keywords and then searches the index file and returns the postings associated with these keywords, sorted by some criteria (i.e. - number of occurrences of the these keywords (total)).
   3. Resulting output must show the **context** surrounding the keyword(s), at least the TOP 3 (*first three?*), of the posting returned.
   4. When possible, experiment with various techniques to optimize the execution time.
 
