@@ -40,14 +40,18 @@ for word in reducer_index:
 # iterate through each search term
 for key in keys:
 
+    print('======================================')
+    print('     SEARCH TERM: --> "%s"' % key)
+    print('======================================')
+
     # check if we have the key, at all
     if key in reducer_index:
 
         # get top 3 documents
-        for idx in range(0, 2):
+        for idx in range(0, 3):
 
             # guard against out of bounds
-            if idx >= len(reducer_index[key]):
+            if idx > len(reducer_index[key]) - 1:
                 break
 
             # otherwise, we can retrieve data!
@@ -84,7 +88,7 @@ for key in keys:
                             context += '\t' + line
 
                 # and print our result!
-                print('Result %d for search term %s:\nTITLE: %s\n%s' % ((idx + 1), key, fname, context))
+                print('Result %d for search term ---> `%s`:\nTITLE: %s\n%s' % ((idx + 1), key, fname, context))
 
 
     # if we don't have the word, display this result for user

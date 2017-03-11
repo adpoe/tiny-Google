@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c727b95-8101-42fe-9c73-6857bd0b3ebb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/query_reducer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/workbook-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/workbook-checkpoint.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_mapper.py" afterPath="$PROJECT_DIR$/query_mapper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbook.ipynb" afterPath="$PROJECT_DIR$/workbook.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_reducer.py" afterPath="$PROJECT_DIR$/query_reducer.py" />
     </list>
     <ignored path="tiny-Google.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query_reducer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="query_reducer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query_reducer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="109" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="109" />
+            <state vertical-scroll-proportion="0.40366971">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
               <folding>
                 <element signature="e#160#181#0" expanded="true" />
               </folding>
@@ -79,15 +74,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.7245409">
-                <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+              <first_editor vertical-scroll-proportion="-0.327212">
+                <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -118,8 +113,8 @@
         <option value="$PROJECT_DIR$/inverted_index_reducer.py" />
         <option value="$PROJECT_DIR$/query_mapper.py" />
         <option value="$PROJECT_DIR$/inverted_index_mapper.py" />
-        <option value="$PROJECT_DIR$/query_reducer.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/query_reducer.py" />
       </list>
     </option>
   </component>
@@ -761,27 +756,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query_reducer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="109" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="109" />
-          <folding>
-            <element signature="e#160#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.7245409">
-            <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <first_editor vertical-scroll-proportion="-0.327212">
+            <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query_reducer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40366971">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="e#160#181#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
