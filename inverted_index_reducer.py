@@ -10,7 +10,9 @@ from sys import stdin
 count_totals = {}   # --> word counts per document, total
 occurrence_indices = {}  # --> the lines where each occurrence appears, in that document
 
+# take each line one at a time from Hadoop Streaming
 for line in stdin:
+
     # split input data into the word itself and the metadata for each book
     word, book_data = line.split('\t')
 

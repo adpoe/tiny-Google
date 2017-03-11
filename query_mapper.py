@@ -11,10 +11,15 @@ from sys import stdin
 # or make them global variables somewhere we can read?
 keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 
-for line in stdin:
-    word_and_metadata = line.split('\t')
-    #print(str(word_and_metadata) + '\n')
 
+# take each line in stdin from Hadoop streaming, one by one
+for line in stdin:
+    # in the last step, we separated by word, and a larger data structure containing
+    # all necessary metadata we need for the query
+    word_and_metadata = line.split('\t')
+
+    # split the line into the word,
+    # and the metadata about that word's occurrences in each book
     word = word_and_metadata[0]
     metadata = word_and_metadata[1]
 
@@ -22,9 +27,15 @@ for line in stdin:
     if word not in keys:
         continue
 
+    # de-structure our book data from previous step,
+    # by splitting on the `;` char, which separates each book's metadta
     entries = metadata.split(';')
 
+    # iterate through each entry in the book
     for entry in entries:
+        # and create a data structure we can parse in the reducer,
+        # and that contains the word, as well as its # occurrences, the book, and a list of indices
+        # at which the word occurrence appeared on, within that book
         entry_data = entry.split(':')
         book = entry_data[0]
         occurrences = entry_data[1]
