@@ -8,7 +8,24 @@
        - Test with: `cat books_preprocess/AdventuresOfHuckleberryFinnByMarkTwain.txt | python inverted_index_mapper.py`
   * Next, do IID Reducer     
        - Test with: `cat books_preprocess/*.txt | python inverted_index_mapper.py | sort -k1,1 | python inverted_index_reducer.py` 
-
+  * Added list of line numbers to payload.
+       - Payload format now looks like this:
+       `recede	DublinersbyJamesJoyce.txt:1:[552]  
+record	AdventuresOfHuckleberryFinnByMarkTwain.txt:3:[10280, 10637, 1383]  
+below	DublinersbyJamesJoyce.txt:9:[1365, 3339, 7509, 7891, 7894, 796, 8015, 852, 857],AdventuresOfHuckleberryFinnByMarkTwain.txt:36:[10978, 12078, 12081, 12202, 1531, 1770, 1816, 1847, 2465, 2583, 2612, 2617, 2879, 2890, 2915, 2946, 3016, 3247, 3262, 3371, 5050, 5407, 5455, 5457, 5462, 5686, 6343, 6371, 7871, 8683, 8724, 8753, 8815, 8863, 8866, 8874],AliceAdventuresinWonderlandbyLewisCarroll.txt:6:[1155, 3094, 3440, 3443, 3567, 841],BeowulfbyJLesslieHall.txt:4:[3426, 6708, 6711, 6835]  
+belov	BeowulfbyJLesslieHall.txt:17:[1000, 1060, 1746, 3701, 4452, 4557, 4656, 4768, 4818, 4866, 4982, 5422, 5881, 5951, 6079, 6377, 6394]  
+injun	AdventuresOfHuckleberryFinnByMarkTwain.txt:9:[1080, 11244, 11502, 414, 5983, 7228, 7230, 9271, 9274]  
+dingnation	AdventuresOfHuckleberryFinnByMarkTwain.txt:1:[3377]  
+cake	AliceAdventuresinWonderlandbyLewisCarroll.txt:3:[228, 237, 242],DublinersbyJamesJoyce.txt:3:[3187, 3193, 3197]  
+bullyragging	AdventuresOfHuckleberryFinnByMarkTwain.txt:1:[8701]  
+rickety	DublinersbyJamesJoyce.txt:1:[2738]  
+stirring	DublinersbyJamesJoyce.txt:1:[4798],AdventuresOfHuckleberryFinnByMarkTwain.txt:7:[2165, 2566, 3957, 4275, 4917, 5555, 688],AliceAdventuresinWonderlandbyLewisCarroll.txt:2:[1332, 1388],BeowulfbyJLesslieHall.txt:2:[1955, 3529]  
+outstart	AdventuresOfHuckleberryFinnByMarkTwain.txt:1:[8196]  
+firm	DublinersbyJamesJoyce.txt:3:[1262, 5060, 5220],BeowulfbyJLesslieHall.txt:11:[1563, 1644, 2012, 2778, 3516, 3524, 3775, 3911, 4362, 5408, 5463]  
+eagerness	DublinersbyJamesJoyce.txt:1:[1246]  
+snatching	AdventuresOfHuckleberryFinnByMarkTwain.txt:1:[6110]  
+inadequate	DublinersbyJamesJoyce.txt:1:[6991]    
+tally	DublinersbyJamesJoyce.txt:1:[4123]  `
 
 -------
 ## Components
