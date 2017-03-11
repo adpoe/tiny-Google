@@ -8,7 +8,7 @@ from sys import stdin
 import os
 import ast
 # both programs need to reference the same keys
-keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards']
+keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 
 
 ###########
@@ -63,9 +63,8 @@ for key in keys:
                 line_data = ast.literal_eval(target_data[2])
                 line_num = line_data[0]  # could slice to :n, to get the first `n` numbers
 
-                #print(line_num + '\n\n')
-                #print(target_data)
-                #line_num = int(line_num)
+                # get word occurrences
+                count = reducer_index[key][idx][0]
 
                 # get the filename
                 fname = target_data[1]
@@ -88,11 +87,12 @@ for key in keys:
                             context += '\t' + line
 
                 # and print our result!
-                print('Result %d for search term ---> `%s`:\nTITLE: %s\n%s' % ((idx + 1), key, fname, context))
+                print('Result %d for search term ---> `%s`:\nTITLE: %s\t >> Word Occurrences: %d << \n%s' %
+                      ((idx + 1), key, fname, count, context))
 
 
     # if we don't have the word, display this result for user
     else:
-        print('------------------------')
+        print('------------------------------------')
         print('No results for word: "%s"' % key)
-        print('------------------------')
+        print('------------------------------------')

@@ -9,7 +9,7 @@ from sys import stdin
 # Need some way to get the query words
 # maybe append them as very first values in the input stream?
 # or make them global variables somewhere we can read?
-keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards']
+keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 
 for line in stdin:
     word_and_metadata = line.split('\t')
