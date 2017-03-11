@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# get the filename of all all files in current path
+# get the filename of all all files in target path
 dir=/Users/tony/Documents/_LEARNINGS/CLOUD/tiny-Google/books_preprocess
 
 # iterate through all files in directory
@@ -17,6 +17,7 @@ do
   sed -i -e 's/^/'$fname'\\t/' $entry
 
   # add line numbers, using unix nl command
+  # (need to add new file for output, so mark it as '_preprocessed')
   nl $entry > "$entry"_preprocessed
 done
 
@@ -24,7 +25,7 @@ done
 rm "$dir"/*.txt-e
 rm "$dir"/*.txt
 
-# fix filenames, so that input filenames match output
+# change file names back, so that input fnames match output
 for f in "$dir"/*.txt_preprocessed; do
   mv -- "$f" "${f%.txt_preprocessed}.txt"
 done
