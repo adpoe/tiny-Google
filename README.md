@@ -10,7 +10,7 @@
        - Test with: `cat books_preprocess/*.txt | python inverted_index_mapper.py | sort -k1,1 | python inverted_index_reducer.py` 
   * Added list of line numbers to payload.
        - Payload format now looks like this:
-       `recede	DublinersbyJamesJoyce.txt:1:[552]  
+       `recede	DublinersbyJamesJoyce.txt:1:[552]   
 record	AdventuresOfHuckleberryFinnByMarkTwain.txt:3:[10280, 10637, 1383]  
 below	DublinersbyJamesJoyce.txt:9:[1365, 3339, 7509, 7891, 7894, 796, 8015, 852, 857],AdventuresOfHuckleberryFinnByMarkTwain.txt:36:[10978, 12078, 12081, 12202, 1531, 1770, 1816, 1847, 2465, 2583, 2612, 2617, 2879, 2890, 2915, 2946, 3016, 3247, 3262, 3371, 5050, 5407, 5455, 5457, 5462, 5686, 6343, 6371, 7871, 8683, 8724, 8753, 8815, 8863, 8866, 8874],AliceAdventuresinWonderlandbyLewisCarroll.txt:6:[1155, 3094, 3440, 3443, 3567, 841],BeowulfbyJLesslieHall.txt:4:[3426, 6708, 6711, 6835]  
 belov	BeowulfbyJLesslieHall.txt:17:[1000, 1060, 1746, 3701, 4452, 4557, 4656, 4768, 4818, 4866, 4982, 5422, 5881, 5951, 6079, 6377, 6394]  
@@ -26,7 +26,20 @@ eagerness	DublinersbyJamesJoyce.txt:1:[1246]
 snatching	AdventuresOfHuckleberryFinnByMarkTwain.txt:1:[6110]  
 inadequate	DublinersbyJamesJoyce.txt:1:[6991]    
 tally	DublinersbyJamesJoyce.txt:1:[4123]  `
-
+    * Now, parse this list given words --> and index directly into a given line number for a book to grab the context
+    * wrote query_mappery --> test with:
+        - `cat books_inverted_index/part-00000 | python query_mapper.py | sort -k1,1 -k2,1`
+        - Output like:
+        ours	1:BeowulfbyJLesslieHall.txt	[5442]
+        yours	1:DublinersbyJamesJoyce.txt	[2386]
+        yours	3:AliceAdventuresinWonderlandbyLewisCarroll.txt	[2457, 1227, 2287]
+        yours	4:AdventuresOfHuckleberryFinnByMarkTwain.txt	[4335, 12010, 550, 162]
+        yourself	10:AliceAdventuresinWonderlandbyLewisCarroll.txt	[2294, 1075, 1441, 3246, 285, 973, 1824, 2429, 528, 2304]
+        yourself	11:DublinersbyJamesJoyce.txt	[3094, 629, 6431, 2142, 2373, 3751, 4691, 6729, 2305, 4491, 4996]
+        yourself	19:AdventuresOfHuckleberryFinnByMarkTwain.txt	[5442, 6128, 1277, 8587, 4291, 3702, 8622, 11533, 7496, 3700, 2894, 2990, 4056, 8577, 288, 3388, 7889, 9395, 2863]
+        yourselves	2:DublinersbyJamesJoyce.txt	[5363, 5902]
+        yourselves	3:AdventuresOfHuckleberryFinnByMarkTwain.txt	[6178, 7023, 8013]
+    
 -------
 ## Components
 ### User Interface (UI)

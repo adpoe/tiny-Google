@@ -33,5 +33,5 @@ for word in count_index:
     postings_list = ["%s:%d:%s" % (doc_id, count_index[word][doc_id], str(occurrence_index[word][doc_id]))
                      for doc_id in count_index[word]]
 
-    postings = ','.join(postings_list)
+    postings = ';'.join(postings_list)
     print('%s\t%s' % (word, postings))
