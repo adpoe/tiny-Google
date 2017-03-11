@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c727b95-8101-42fe-9c73-6857bd0b3ebb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inverted_index_reducer.py" afterPath="$PROJECT_DIR$/inverted_index_reducer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_mapper.py" afterPath="$PROJECT_DIR$/query_mapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/query_run.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_inverted_index/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_inverted_index/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_inverted_index/_SUCCESS" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tiny-Google.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,14 +64,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query_reducer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="query_reducer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/query_reducer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2477064">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#160#181#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static_run.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static_run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query_run.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/query_run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2522936">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,6 +137,7 @@
         <option value="$PROJECT_DIR$/inverted_index_mapper.py" />
         <option value="$PROJECT_DIR$/inverted_index_reducer.py" />
         <option value="$PROJECT_DIR$/query_mapper.py" />
+        <option value="$PROJECT_DIR$/query_run.sh" />
       </list>
     </option>
   </component>
@@ -181,7 +205,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="books" />
+              <option name="myItemId" value="query_result" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiny-Google" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tiny-Google" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books_inverted_index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -705,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2522936">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preprocess.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2522936">
@@ -763,11 +793,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query_reducer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2477064">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#160#181#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query_result/part-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query_run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2522936">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
