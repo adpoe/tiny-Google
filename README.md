@@ -39,6 +39,8 @@ tally	DublinersbyJamesJoyce.txt:1:[4123]  `
         yourself	19:AdventuresOfHuckleberryFinnByMarkTwain.txt	[5442, 6128, 1277, 8587, 4291, 3702, 8622, 11533, 7496, 3700, 2894, 2990, 4056, 8577, 288, 3388, 7889, 9395, 2863]
         yourselves	2:DublinersbyJamesJoyce.txt	[5363, 5902]
         yourselves	3:AdventuresOfHuckleberryFinnByMarkTwain.txt	[6178, 7023, 8013]
+    * Got first version working with:
+        -     `cat books_inverted_index/part-00000 | python query_mapper.py | sort -k1,1 -k2,1 | python query_reducer.py`
     
 -------
 ## Components
