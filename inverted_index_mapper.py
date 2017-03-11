@@ -14,25 +14,22 @@ for line in stdin:
     line = line.strip()
 
     # split each line by on tabs, to get the document id, and then actual text
-    meta_and_line = line.split('\\t')  # double tab because sed places an escaped tab, \\t
-                               # when we pre-process input
+    metadata_and_line = line.split('\\t')  # double tab because sed places an escaped tab, \\t
+                                           # when we pre-process input
 
     # if we have a blank line, skip to next
-    if len(meta_and_line) < 2:
-        #print len(meta_and_line)
-        #print(meta_and_line)
+    if len(metadata_and_line) < 2:
         continue
 
     # these need to be split on just one '\t', because of the output from nl
-    line_num_and_fname = meta_and_line[0].split('\t')
-    #print(line_num_and_fname)
+    line_num_and_fname = metadata_and_line[0].split('\t')
 
     # assign document id and text, from what we've split
     line_num = int(line_num_and_fname[0])
-    doc_id = line_num_and_fname[1]
-    text = meta_and_line[1]
+    book_name = line_num_and_fname[1]
+    text = metadata_and_line[1]
 
-    # can use this print to check that split are working
+    # can use this print to check that splits are working
     # print(split)
 
     # use regex to split the line into words
@@ -43,4 +40,7 @@ for line in stdin:
     # make sure we are looking at same document before setting previous line's text
     # map each word and the doc id
     for word in words:
-        print("%s\t%s:1:%s" % (word.lower(), doc_id, line_num))
+        # standardize words to lowercase
+        word = word.lower()
+        # then output, passing them to reducer
+        print("%s\t%s:1:%s" % (word, book_name, line_num))

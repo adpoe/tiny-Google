@@ -5,33 +5,50 @@
 """
 
 from sys import stdin
-import re
 
-count_index = {}
-occurrence_index = {}
+# create data structures to store:
+count_totals = {}   # --> word counts per document, total
+occurrence_indices = {}  # --> the lines where each occurrence appears, in that document
 
 for line in stdin:
-    word, postings = line.split('\t')
+    # split input data into the word itself and the metadata for each book
+    word, book_data = line.split('\t')
 
-    count_index.setdefault(word, {})
-    occurrence_index.setdefault(word, {})
+    # initialize our dictionaries, to ensure there are no invalid key exceptions
+    count_totals.setdefault(word, {})
+    occurrence_indices.setdefault(word, {})
 
-    for posting in postings.split(','):
-        doc_id, count, line_num = posting.split(':')
+    # books are separated by a ',' in our data structure,
+    # so split on commas to get data related to each book,
+    # in series
+    for line_data in book_data.split(','):
+        book_name, count, line_num = line_data.split(':')
         count = int(count)
         line_num = int(line_num)
 
         # handle count index
-        count_index[word].setdefault(doc_id, 0)
-        count_index[word][doc_id] += count
+        count_totals[word].setdefault(book_name, 0)
+        count_totals[word][book_name] += count
 
         # handle occurrence index
-        occurrence_index[word].setdefault(doc_id, [])
-        occurrence_index[word][doc_id].append(line_num)
+        occurrence_indices[word].setdefault(book_name, [])
+        occurrence_indices[word][book_name].append(line_num)
 
-for word in count_index:
-    postings_list = ["%s:%d:%s" % (doc_id, count_index[word][doc_id], str(occurrence_index[word][doc_id]))
-                     for doc_id in count_index[word]]
 
-    postings = ';'.join(postings_list)
-    print('%s\t%s' % (word, postings))
+# now that we've processed stdin and tallied occurrences + counts
+# next step is to combine this data into one structure,
+# then output it
+for word in count_totals:
+    # use list comprehension for each word, to pull our data into same structure,
+    # before we output to stdout
+    occurence_list = ["%s:%d:%s" % (book_name, count_totals[word][book_name],
+                                    str(occurrence_indices[word][book_name]))
+                                        for book_name in count_totals[word]]
+
+    # separate data for each BOOK by a `;` --> can't use a `,` ==> because we have a list embedded
+    # within this structure as well.
+    # using a `;`, will ensure we can split by book easily, and on a unique index
+    # when we run a query
+    book_data = ';'.join(occurence_list)
+    # and --> finally, print to stdout
+    print('%s\t%s' % (word, book_data))
