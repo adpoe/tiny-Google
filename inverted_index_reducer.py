@@ -1,4 +1,8 @@
 #! /usr/bin/python
+"""
+ Usage: test with -->
+ cat books_preprocess/*.txt | python inverted_index_mapper.py | sort -k1,1 | python inverted_index_reducer.py
+"""
 
 from sys import stdin
 import re
@@ -6,20 +10,20 @@ import re
 index = {}
 
 for line in stdin:
-        word, postings = line.split('\t')
+    word, postings = line.split('\t')
 
-        index.setdefault(word, {})
+    index.setdefault(word, {})
 
-        for posting in postings.split(','):
-                doc_id, count = posting.split(':')
-                count = int(count)
+    for posting in postings.split(','):
+        doc_id, count = posting.split(':')
+        count = int(count)
 
-                index[word].setdefault(doc_id, 0)
-                index[word][doc_id] += count
+        index[word].setdefault(doc_id, 0)
+        index[word][doc_id] += count
 
 for word in index:
-        postings_list = ["%s:%d" % (doc_id, index[word][doc_id])
+    postings_list = ["%s:%d" % (doc_id, index[word][doc_id])
                          for doc_id in index[word]]
 
-        postings = ','.join(postings_list)
-        print('%s\t%s' % (word, postings))
+    postings = ','.join(postings_list)
+    print('%s\t%s' % (word, postings))

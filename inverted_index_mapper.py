@@ -32,6 +32,6 @@ for line in stdin:
     # or other besides just ' ', whitespace. This handles all whitespace.
     words = re.findall(r'\w+', text.strip())
 
-    # map each work and the doc id
+    # map each word and the doc id
     for word in words:
         print("%s\t%s:1" % (word.lower(), doc_id))

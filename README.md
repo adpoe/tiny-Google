@@ -1,12 +1,13 @@
 # tiny-Google
 ## Status
-    * Preprocessing shell script is working. To test: 
-        - fill `books_preprocess` with unprocssed books.txt files
-        - run `sh preprocess.sh`
-    * IID Mapper is working
-        - Test with: `cat books_preprocess/AdventuresOfHuckleberryFinnByMarkTwain.txt | python inverted_index_mapper.py'
-    * Next, do IID Reducer     
-   
+
+  * Preprocessing shell script is working. To test: 
+      - fill `books_preprocess` with unprocssed books.txt files
+      - run `sh preprocess.sh`
+  * IID Mapper is working
+       - Test with: `cat books_preprocess/AdventuresOfHuckleberryFinnByMarkTwain.txt | python inverted_index_mapper.py`
+  * Next, do IID Reducer     
+       - Test with: `cat books_preprocess/*.txt | python inverted_index_mapper.py | sort -k1,1 | python inverted_index_reducer.py` 
 
 
 -------
