@@ -8,20 +8,20 @@
 
 ## Design Specifications
 TinyGoogle is a program comprised of three components.
-  1.  User interface  
-  2.  Inverted Index MapReduce  
-  3.  Search Query MapReduce   
+    1.  User interface
+    2.  Inverted Index MapReduce
+    3.  Search Query MapReduce 
     
 We chose to use Python to program each of these components. The MapReduce jobs (2 and 3) both run using Hadoop Streaming.
 
 The overall design is outlined below.
 
 ### User Interface
-The UI for TinyGoogle is a program invoked from the command line, with two available options.  
-  a.  **Index** a new file (must be a .txt)  
-    * `python tinyGoogle.py -i /full/path/to/my/file`
-  b.  Perform a **Search** for some set of keywords
-    * `python tinyGoogle.py -s these are my keywords each separated by a space`
+The UI for TinyGoogle is a program invoked from the command line, with two available options.
+    a.  **Index** a new file (must be a .txt)
+        * `python tinyGoogle.py -i /full/path/to/my/file`
+    b.  Perform a **Search** for some set of keywords
+        * `python tinyGoogle.py -s these are my keywords each separated by a space`
 
 If action (a) **INDEX** ] is invoked --> we index the the file by moving the target file into the `/books` directory. The `/books` directory contains all of the raw data files on which we can perform a search.
 
