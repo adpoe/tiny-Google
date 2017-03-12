@@ -40,13 +40,13 @@ The Inverted Index (II) is created via a MapReduce job that calls Hadoop Streami
 
 #### Mapper
   * During the MAP phase, we construct a payload in this format:
-    - FORMAT:    word\tbook_name:line_number
-    - EXAMPLE:   music   BeowulfbyJLesslieHall.txt:4
+    - **FORMAT:**    `word\tbook_name:line_number`
+    - **EXAMPLE:**   `music   BeowulfbyJLesslieHall.txt:4`
 
 #### Reducer
   * The reducer then takes each of these lines and combines it into a format where we can get all data about any given word using this data structure:
-    - FORMAT:    word\tbook_name:total_ocurrences:[line,numbers,list],book_name:total_ocurrences:[line,numbers,list]
-    - EXAMPLE:   'weather	AdventuresOfHuckleberryFinnByMarkTwain.txt:12:[10444, 10125, 6579, 2958, 1103, 5460, 2975, 6592, 8653, 4621, 2953, 4219],DublinersbyJamesJoyce.txt:5:[3210, 604, 3473, 7339, 3713]'
+    - **FORMAT:**    `word\tbook_name:total_ocurrences:[line,numbers,list],book_name:total_ocurrences:[line,numbers,list]`
+    - **EXAMPLE:**   `'weather	AdventuresOfHuckleberryFinnByMarkTwain.txt:12:[10444, 10125, 6579, 2958, 1103, 5460, 2975, 6592, 8653, 4621, 2953, 4219],DublinersbyJamesJoyce.txt:5:[3210, 604, 3473, 7339, 3713]'`
   * This allows us to store the following format, each on one line of our Inverted Index:
     - Word (index)
     - Book Name
