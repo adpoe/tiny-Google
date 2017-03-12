@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c727b95-8101-42fe-9c73-6857bd0b3ebb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/inverted_index.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Design.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books_preprocess/.!67646!TheAdventuresOfTomSawyerByMarkTwain.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books.tar.gz" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_keywords.txt" afterPath="$PROJECT_DIR$/search_keywords.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tinyGoogle.py" afterPath="$PROJECT_DIR$/tinyGoogle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbook.ipynb" afterPath="$PROJECT_DIR$/workbook.ipynb" />
     </list>
     <ignored path="tiny-Google.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tinyGoogle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tinyGoogle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyGoogle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.146789">
-              <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#728#738#0" expanded="true" />
               </folding>
@@ -67,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/inverted_index_mapper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <caret line="5" column="75" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -90,18 +92,6 @@
               <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="e#133#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_reducer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query_reducer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <element signature="e#160#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +133,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Design.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Design.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="3.3555927">
+                <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -172,6 +178,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/query_mapper.py" />
         <option value="$PROJECT_DIR$/tinyGoogle.py" />
+        <option value="$PROJECT_DIR$/Design.md" />
       </list>
     </option>
   </component>
@@ -181,7 +188,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="176" />
+    <option name="x" value="183" />
     <option name="y" value="23" />
     <option name="width" value="1086" />
     <option name="height" value="772" />
@@ -522,7 +529,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="176" y="23" width="1086" height="772" extended-state="0" />
+    <frame x="183" y="23" width="1086" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20019157" sideWeight="0.69584244" order="0" side_tool="false" content_ui="combo" />
@@ -682,7 +689,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#160#181#0" expanded="true" />
+            <element signature="e#160#181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -719,6 +726,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inverted_index_reducer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinyGoogle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#728#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
@@ -733,22 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inverted_index_mapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inverted_index_reducer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/query_mapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -759,13 +768,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinyGoogle.py">
+    <entry file="file://$PROJECT_DIR$/inverted_index_mapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.146789">
-          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
-          <folding>
-            <element signature="e#728#738#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Design.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="3.3555927">
+            <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
