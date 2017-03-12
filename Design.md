@@ -1,10 +1,8 @@
 # Tiny Google
 
-@author Anthony (Tony) Poerio 
-@email adp59@pitt.edu
+@author Anthony (Tony) Poerio @email adp59@pitt.edu
 
-@author Andrew Masih
-@email anm226@pitt.edu
+@author Andrew Masih @email anm226@pitt.edu
 
 ## Design Specifications
 TinyGoogle is a program comprised of three components.
@@ -18,10 +16,10 @@ The overall design is outlined below.
 
 ### User Interface
 The UI for TinyGoogle is a program invoked from the command line, with two available options.  
-  a.  **Index** a new file (must be a .txt)  
-    * `python tinyGoogle.py -i /full/path/to/my/file`
-  b.  Perform a **Search** for some set of keywords
-    * `python tinyGoogle.py -s these are my keywords each separated by a space`
+  1. **Index** a new file (must be a .txt)  
+  `python tinyGoogle.py -i /full/path/to/my/file`
+  2.  Perform a **Search** for some set of keywords  
+   `python tinyGoogle.py -s these are my keywords each separated by a space`
 
 If action (a) **INDEX** ] is invoked --> we index the the file by moving the target file into the `/books` directory. The `/books` directory contains all of the raw data files on which we can perform a search.
 
