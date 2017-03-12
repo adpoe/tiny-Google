@@ -122,8 +122,8 @@
         <entry file="file://$PROJECT_DIR$/Design.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.7487437">
-                <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
+              <first_editor vertical-scroll-proportion="-0.6080402">
+                <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -861,8 +861,8 @@
     <entry file="file://$PROJECT_DIR$/Design.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.7487437">
-            <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
+          <first_editor vertical-scroll-proportion="-0.6080402">
+            <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
