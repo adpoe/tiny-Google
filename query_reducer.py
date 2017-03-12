@@ -7,9 +7,14 @@
 from sys import stdin
 import os
 import ast
-# both programs need to reference the same keys
-keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 
+# both programs need to reference the same keys
+#keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
+dir_path = os.path.dirname(os.path.realpath(__file__))
+keywords_file = dir_path + '/search_keywords.txt'
+with open(keywords_file) as f:
+    keywords = f.read()
+    keys = ast.literal_eval(keywords)
 
 ###########
 # RANKING #

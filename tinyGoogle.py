@@ -56,7 +56,7 @@ def main():
         keywords = [sys.argv[k] for k in range(2, len(sys.argv))]
         print('Searching with keywords:  ' + str(keywords))
 
-        # save keywords list to a file, so the query mappper/reducer can both
+        # save keywords list to a file, so the query mapper/reducer can both
         # read same list of keywords, and inform their search effort
         dir_path = os.path.dirname(os.path.realpath(__file__))
         fname = dir_path + '/search_keywords.txt'

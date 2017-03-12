@@ -3,14 +3,24 @@
  Usage: test with -->
     cat books_inverted_index/part-00000 | python query_mapper.py | sort -k1,1 -k2,1
 """
-
+import os
 from sys import stdin
+import ast
+
+
 
 # Need some way to get the query words
 # maybe append them as very first values in the input stream?
 # or make them global variables somewhere we can read?
-keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 
+
+#keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
+#keys = []
+dir_path = os.path.dirname(os.path.realpath(__file__))
+keywords_file = dir_path + '/search_keywords.txt'
+with open(keywords_file) as f:
+    keywords = f.read()
+    keys = ast.literal_eval(keywords)
 
 # take each line in stdin from Hadoop streaming, one by one
 for line in stdin:
