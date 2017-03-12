@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # get the filename of all all files in target path
+#dir=${PWD}/books_preprocess  <-- test that this works, when we get there
 dir=/Users/tony/Documents/_LEARNINGS/CLOUD/tiny-Google/books_preprocess
 
 # iterate through all files in directory

@@ -79,11 +79,15 @@ for key in keys:
                 context = ""
                 with open(fpath) as f:
                     for i, line in enumerate(f):
+                        if i == line_num - 2:
+                            context += '\t' + line
                         if i == line_num - 1:
                             context += '\t' + line
                         if i == line_num:
                             context += '\t' + line
                         if i == line_num + 1:
+                            context += '\t' + line
+                        if i == line_num + 2:
                             context += '\t' + line
 
                 # and print our result!
