@@ -66,7 +66,7 @@ def main():
             return
 
         # build keywords list, we'll use this to search
-        keywords = [sys.argv[k] for k in range(2, len(sys.argv))]
+        keywords = [sys.argv[k].lower() for k in range(2, len(sys.argv))]
         print('Searching with keywords:  ' + str(keywords))
 
         # save keywords list to a file, so the query mapper/reducer can both
