@@ -63,18 +63,32 @@ def main():
         with open(fname, 'w') as f:
             f.write(str(keywords))
 
-        # run the inverted index shell script
+        # run the preprocessing shell script
+        shell_script = dir_path + '/preprocess.sh'
+        returncode = subprocess.call(['sh', shell_script])
+        if not returncode == 0:
+            print('\n\n\t\tTINY-GOOGLE:: ERROR --> __Preprocessing__ Failed')
 
+        # run the inverted index shell script
+        shell_script = dir_path + '/inverted_index_run.sh'
+        returncode = subprocess.call(['sh', shell_script])
+        if not returncode == 0:
+            print('\n\n\t\tTINY-GOOGLE:: ERROR --> __Inverted Index__ MapReduce Job Failed')
 
         # run the query shell script
+        shell_script = dir_path + '/query_run.sh'
+        returncode = subprocess.call(['sh', shell_script])
+        if not returncode == 0:
+            print('\n\n\t\tTINY-GOOGLE:: ERROR --> __Query MapReduce__ Job Failed')
 
 
-    """ CLEANUP """
-    # Remove files from last run, so user can re-run the script
+        """ CLEANUP """
+        # Remove files from last run, so user can re-run the script
+        shell_script = dir_path + '/cleanup.sh'
+        returncode = subprocess.call(['sh', shell_script])
+        if not returncode == 0:
+            print('\n\n\t\tTINY-GOOGLE:: ERROR --> __CLEANUP__ Script Failed. You may need to delete Hadoop output directories manually.')
 
-
-    print len(sys.argv)
-    print str(sys.argv)
     return
 
 if __name__ == "__main__":
