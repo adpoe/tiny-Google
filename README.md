@@ -1,6 +1,5 @@
 # tiny-Google
 ## Status
-
   * Preprocessing shell script is working. To test: 
       - fill `books_preprocess` with unprocssed books.txt files
       - run `sh preprocess.sh`

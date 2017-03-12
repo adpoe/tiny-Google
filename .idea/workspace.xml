@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c727b95-8101-42fe-9c73-6857bd0b3ebb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cleanup.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_examples/times_rated_count_mrjob.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/books_inverted_index/part-00000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess/AdventuresOfHuckleberryFinnByMarkTwain.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess/AliceAdventuresinWonderlandbyLewisCarroll.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess/BeowulfbyJLesslieHall.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess/DublinersbyJamesJoyce.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/query_result/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/query_result/.part-00000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/query_result/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/query_result/part-00000" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static_run.sh" afterPath="$PROJECT_DIR$/inverted_index_run.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess-bak/AdventuresOfHuckleberryFinnByMarkTwain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess-bak/AliceAdventuresinWonderlandbyLewisCarroll.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess-bak/BeowulfbyJLesslieHall.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/books_preprocess-bak/DublinersbyJamesJoyce.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocess.sh" afterPath="$PROJECT_DIR$/preprocess.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/query_run.sh" afterPath="$PROJECT_DIR$/query_run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_keywords.txt" afterPath="$PROJECT_DIR$/search_keywords.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tinyGoogle.py" afterPath="$PROJECT_DIR$/tinyGoogle.py" />
     </list>
@@ -54,13 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tinyGoogle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tinyGoogle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tinyGoogle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7706422">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="109" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="109" />
               <folding>
-                <element signature="e#297#307#0" expanded="true" />
+                <element signature="e#728#738#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,15 +121,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="-0.327212">
-                <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
+              <first_editor vertical-scroll-proportion="0.025041737">
+                <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -165,7 +156,6 @@
         <option value="$PROJECT_DIR$/books/preprocessing.py" />
         <option value="$PROJECT_DIR$/preprocessing.py" />
         <option value="$PROJECT_DIR$/static_run.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/inverted_index_mapper.py" />
         <option value="$PROJECT_DIR$/inverted_index_reducer.py" />
         <option value="$PROJECT_DIR$/index_file.sh" />
@@ -175,6 +165,7 @@
         <option value="$PROJECT_DIR$/preprocess.sh" />
         <option value="$PROJECT_DIR$/query_run.sh" />
         <option value="$PROJECT_DIR$/tinyGoogle.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -712,20 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="-0.327212">
-            <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inverted_index_reducer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -806,11 +783,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tinyGoogle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7706422">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="109" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="109" />
           <folding>
-            <element signature="e#297#307#0" expanded="true" />
+            <element signature="e#728#738#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.025041737">
+            <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -7,6 +7,19 @@
             ==> arg: -i filepath
       b.  enter search queries and retrieve relevant document objects
             ==> arg -s my keywords here
+
+
+    Usage Examples:
+    ---------------
+
+    INDEX -->
+        'Indexing The Count of Monte Cristo'
+        wget https://www.gutenberg.org/files/1184/1184-0.txt
+        mv 1184-0.txt TheCountOfMonteCristo_by_AlexanderDumas.txt
+        python tinyGoogle.py -i TheCountOfMonteCristo_by_AlexanderDumas.txt
+
+    SEARCH -->
+        python tinyGoogle.py -s the count gets revenge and there is much intrigue over many hundreds of pages
 """
 
 import sys
