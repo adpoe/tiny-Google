@@ -120,7 +120,7 @@ for x in range(0, 3):
         #the total weight per doc, which is search_term[0]_weight + search_term[1]_weigth +..search_term[n]_weight
         print("Result %d --> Weight = %f"%(x+1,sort_weights[x][1]))
         #print title
-        print("TITLE : %s" %(sort_weights[x][0]))
+        print("TITLE : %s\n" %(sort_weights[x][0]))
 
     #print context for each word
     for some_word in search_list:
