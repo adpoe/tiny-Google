@@ -46,13 +46,22 @@ for word in reducer_index:
     reducer_index[word].sort(reverse=True)
 
 # use algorithm to calculate the weight of a word in a doc
+# w(key, doc) = (1 + log2 freq(key,doc)) * log2 (N / n(doc))
+# w(key, doc) is the weight of a word(key) in some doc
+# freq(key, doc) is just the frequency of a word in some doc
+# (N/n(doc)) where N = number of total docs, and n(doc) = number of docs the word appears in
+# for more info : https://en.wikipedia.org/wiki/Tf%E2%80%93idf
 def calc_weight(freq, doc_freq):
-
+    #this is part calculation of idf which is inverse document frequency
     part_idf = 16.0/doc_freq
     idf = math.log(part_idf, 2)
+
+    #this is calculation of term frequency
     tf = 1 + math.log(freq, 2)
     weight = idf*tf
     weight = round(weight, 6)
+
+    #returns the weight of some word in given doc
     return weight
 
 weights_per_doc = {}
@@ -71,8 +80,8 @@ def rel_rank(word):
         #doc name -> book name
         doc = temp_book[1]
 
-        #the weight of the word in given doc based on the number of docs
-        #it appears in and total number of docs
+        #The weight of the word in given doc based on the number of docs
+        #it appears in and total number of docs.
         weight = calc_weight(freq, doc_freq)
 
         if doc not in weights_per_doc:
@@ -88,6 +97,8 @@ search_term = ""
 for key in keys:
     rel_rank(key)
     search_term = search_term + key+ " "
+
+#sort the weights in decending order for ease of access
 sort_weights = sorted(total_weights.items(), key=lambda value: value[1], reverse=True)
 
 ###############################
@@ -96,11 +107,19 @@ sort_weights = sorted(total_weights.items(), key=lambda value: value[1], reverse
 print('================================================================================')
 print('     SEARCH TERM: --> "%s"' % search_term)
 print('================================================================================')
+
+# split the term, to go through
 search_list = search_term.split()
+
+#print the top 3 results from the weights_per_doc
 for x in range(0, 3):
     print("\n")
     print("Result %d --> Weight = %f"%(x+1,sort_weights[x][1]))
+
+    #the total weight per doc, which is search_term[0]_weight + search_term[1]_weigth +..search_term[n]_weight
     print("TITLE : %s" %(sort_weights[x][0]))
+
+    #print context for each word
     for some_word in search_list:
         for target_data in reducer_index[some_word]:
             if target_data[1] == sort_weights[x][0]:
@@ -130,7 +149,7 @@ for x in range(0, 3):
                             context += '\t' + line
                         if i == line_num + 2:
                             context += '\t' + line
-
+                #print the context around the words in the search term
                 print(context)
 
 
