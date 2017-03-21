@@ -52,6 +52,7 @@ for word in reducer_index:
 # (N/n(doc)) where N = number of total docs, and n(doc) = number of docs the word appears in
 # for more info : https://en.wikipedia.org/wiki/Tf%E2%80%93idf
 def calc_weight(freq, doc_freq):
+
     #this is part calculation of idf which is inverse document frequency
     part_idf = 16.0/doc_freq
     idf = math.log(part_idf, 2)
@@ -92,11 +93,12 @@ def rel_rank(word):
             total_weights[doc] = total_weights[doc] + weight
 
 #search term string
-search_term = ""
+search_term = " "
 #do all the calculations using rel_rank
 for key in keys:
-    rel_rank(key)
-    search_term = search_term + key+ " "
+    if key in reducer_index:
+        rel_rank(key)
+search_term = search_term.join(keys)
 
 #sort the weights in decending order for ease of access
 sort_weights = sorted(total_weights.items(), key=lambda value: value[1], reverse=True)
@@ -114,43 +116,52 @@ search_list = search_term.split()
 #print the top 3 results from the weights_per_doc
 for x in range(0, 3):
     print("\n")
-    print("Result %d --> Weight = %f"%(x+1,sort_weights[x][1]))
-
-    #the total weight per doc, which is search_term[0]_weight + search_term[1]_weigth +..search_term[n]_weight
-    print("TITLE : %s" %(sort_weights[x][0]))
+    if sort_weights:
+        #the total weight per doc, which is search_term[0]_weight + search_term[1]_weigth +..search_term[n]_weight
+        print("Result %d --> Weight = %f"%(x+1,sort_weights[x][1]))
+        #print title
+        print("TITLE : %s" %(sort_weights[x][0]))
 
     #print context for each word
     for some_word in search_list:
-        for target_data in reducer_index[some_word]:
-            if target_data[1] == sort_weights[x][0]:
-                # get the first line number
-                line_data = ast.literal_eval(target_data[2])
-                line_num = line_data[0]  # could slice to :n, to get the first `n` numbers
-                # get the filename
-                fname = target_data[1]
+        if some_word in reducer_index:
+            for target_data in reducer_index[some_word]:
+                if target_data[1] == sort_weights[x][0]:
 
-                # get the directory
-                dir_path = os.path.dirname(os.path.realpath(__file__))
 
-                # concat full path for our file
-                fpath = dir_path + '/books/' + fname
+                    # get the first line number
+                    line_data = ast.literal_eval(target_data[2])
+                    line_num = line_data[0]  # could slice to :n, to get the first `n` numbers
+                    # get the filename
+                    fname = target_data[1]
 
-                # only the grab the context for lines right our around our target
-                context = ""
-                with open(fpath) as f:
-                    for i, line in enumerate(f):
-                        if i == line_num - 2:
-                            context += '\t' + line
-                        if i == line_num - 1:
-                            context += '\t' + line
-                        if i == line_num:
-                            context += '\t' + line
-                        if i == line_num + 1:
-                            context += '\t' + line
-                        if i == line_num + 2:
-                            context += '\t' + line
-                #print the context around the words in the search term
-                print(context)
+                    # get the directory
+                    dir_path = os.path.dirname(os.path.realpath(__file__))
+
+                    # concat full path for our file
+                    fpath = dir_path + '/books/' + fname
+
+                    # only the grab the context for lines right our around our target
+                    context = ""
+                    with open(fpath) as f:
+                        for i, line in enumerate(f):
+                            if i == line_num - 2:
+                                context += '\t' + line
+                            if i == line_num - 1:
+                                context += '\t' + line
+                            if i == line_num:
+                                context += '\t' + line
+                            if i == line_num + 1:
+                                context += '\t' + line
+                            if i == line_num + 2:
+                                context += '\t' + line
+                    #print the context around the words in the search term
+                    print(context)
+        else:
+            print('-------------------------------------------')
+            print('This term does not appear: "%s"' % some_word)
+            print('-------------------------------------------')
+
 
 
 #############
