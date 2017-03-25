@@ -19,6 +19,16 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+#finds total number of books in books directory
+#for rel_rank system to work
+path = './books'
+
+#count = number of books
+total_docs = len([f for f in os.listdir(path)
+                if os.path.isfile(os.path.join(path, f))])
+#subtract 1 because there is a .DS_STORE file on when testing on macs
+total_docs = (float)(total_docs - 1)
+
 # both programs need to reference the same keys
 #keys = ['yours', 'you', 'yield', 'king', 'shield', 'young', 'yawned', 'yards', 'xfas']
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -64,7 +74,7 @@ for word in reducer_index:
 def calc_weight(freq, doc_freq):
 
     #this is part calculation of idf which is inverse document frequency
-    part_idf = 16.0/doc_freq
+    part_idf = total_docs/doc_freq
     idf = math.log(part_idf, 2)
 
     #this is calculation of term frequency
@@ -272,7 +282,7 @@ for key in keys:
                     for i, line in enumerate(f):
                         if i == line_num - 2:
                             context += '\t' + line
-                        if i == line_num - 1:
+                        if i == line_num -1:
                             context += '\t' + bcolors.OKGREEN + line + bcolors.ENDC
                         if i == line_num:
                             context += '\t' + line
