@@ -1,0 +1,147 @@
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tThe Project Gutenberg EBook of The Adventures of Tom Sawyer, Complete by
+TheAdventuresOfTomSawyerByMarkTwain.txt\tMark Twain (Samuel Clemens)
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tThis eBook is for the use of anyone anywhere at no cost and with almost
+TheAdventuresOfTomSawyerByMarkTwain.txt\tno restrictions whatsoever. You may copy it, give it away or re-use
+TheAdventuresOfTomSawyerByMarkTwain.txt\tit under the terms of the Project Gutenberg License included with this
+TheAdventuresOfTomSawyerByMarkTwain.txt\teBook or online at www.gutenberg.net
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tTitle: The Adventures of Tom Sawyer, Complete
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tAuthor: Mark Twain (Samuel Clemens)
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tRelease Date: August 20, 2006 [EBook #74]
+TheAdventuresOfTomSawyerByMarkTwain.txt\tLast updated: August 17, 2016
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tLanguage: English
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCharacter set encoding: UTF-8
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t*** START OF THIS PROJECT GUTENBERG EBOOK TOM SAWYER ***
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tProduced by David Widger
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tTHE ADVENTURES OF TOM SAWYER
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tBy Mark Twain
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t(Samuel Langhorne Clemens)
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCONTENTS
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER I. Y-o-u-u Tom-Aunt Polly Decides Upon her Duty--Tom Practices
+TheAdventuresOfTomSawyerByMarkTwain.txt\tMusic--The Challenge--A Private Entrance
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER II. Strong Temptations--Strategic Movements--The Innocents
+TheAdventuresOfTomSawyerByMarkTwain.txt\tBeguiled
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER III. Tom as a General--Triumph and Reward--Dismal
+TheAdventuresOfTomSawyerByMarkTwain.txt\tFelicity--Commission and Omission
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER IV. Mental Acrobatics--Attending Sunday--School--The
+TheAdventuresOfTomSawyerByMarkTwain.txt\tSuperintendent--“Showing off”--Tom Lionized
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER V. A Useful Minister--In Church--The Climax
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER VI. Self-Examination--Dentistry--The Midnight Charm--Witches and
+TheAdventuresOfTomSawyerByMarkTwain.txt\tDevils--Cautious Approaches--Happy Hours
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER VII. A Treaty Entered Into--Early Lessons--A Mistake Made
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER VIII. Tom Decides on his Course--Old Scenes Re-enacted
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER IX. A Solemn Situation--Grave Subjects Introduced--Injun Joe
+TheAdventuresOfTomSawyerByMarkTwain.txt\tExplains
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER X. The Solemn Oath--Terror Brings Repentance--Mental Punishment
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XI. Muff Potter Comes Himself--Tom’s Conscience at Work
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XII. Tom Shows his Generosity--Aunt Polly Weakens
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XIII. The Young Pirates--Going to the Rendezvous--The Camp--Fire
+TheAdventuresOfTomSawyerByMarkTwain.txt\tTalk
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XIV. Camp-Life--A Sensation--Tom Steals Away from Camp
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XV. Tom Reconnoiters--Learns the Situation--Reports at Camp
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XVI. A Day’s Amusements--Tom Reveals a Secret--The Pirates take a
+TheAdventuresOfTomSawyerByMarkTwain.txt\tLesson--A Night Surprise--An Indian War
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XVII. Memories of the Lost Heroes--The Point in Tom’s Secret
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XVIII. Tom’s Feelings Investigated--Wonderful Dream--Becky
+TheAdventuresOfTomSawyerByMarkTwain.txt\tThatcher Overshadowed--Tom Becomes Jealous--Black Revenge
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XIX. Tom Tells the Truth
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XX. Becky in a Dilemma--Tom’s Nobility Asserts Itself
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXI. Youthful Eloquence--Compositions by the Young Ladies--A
+TheAdventuresOfTomSawyerByMarkTwain.txt\tLengthy Vision--The Boy’s Vengeance Satisfied
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXII. Tom’s Confidence Betrayed--Expects Signal Punishment
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXIII. Old Muff’s Friends--Muff Potter in Court--Muff Potter
+TheAdventuresOfTomSawyerByMarkTwain.txt\tSaved
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXIV. Tom as the Village Hero--Days of Splendor and Nights of
+TheAdventuresOfTomSawyerByMarkTwain.txt\tHorror--Pursuit of Injun Joe
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXV. About Kings and Diamonds--Search for the Treasure--Dead
+TheAdventuresOfTomSawyerByMarkTwain.txt\tPeople and Ghosts
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXVI. The Haunted House--Sleepy Ghosts--A Box of Gold--Bitter Luck
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXVII. Doubts to be Settled--The Young Detectives
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXVIII. An Attempt at No. Two--Huck Mounts Guard
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXIX. The Pic-nic--Huck on Injun Joe’s Track--The “Revenge”
+TheAdventuresOfTomSawyerByMarkTwain.txt\t Job--Aid for the Widow
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXX. The Welchman Reports--Huck Under Fire--The Story Circulated
+TheAdventuresOfTomSawyerByMarkTwain.txt\t--A New Sensation--Hope Giving Way to Despair
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXXI. An Exploring Expedition--Trouble Commences--Lost in the
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCave--Total Darkness--Found but not Saved
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXXII. Tom tells the Story of their Escape--Tom’s Enemy in Safe
+TheAdventuresOfTomSawyerByMarkTwain.txt\tQuarters
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXXIII. The Fate of Injun Joe--Huck and Tom Compare Notes
+TheAdventuresOfTomSawyerByMarkTwain.txt\t--An Expedition to the Cave--Protection Against Ghosts--“An Awful Snug
+TheAdventuresOfTomSawyerByMarkTwain.txt\tPlace”--A Reception at the Widow Douglas’s
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXXIV. Springing a Secret--Mr. Jones’ Surprise a Failure
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tCHAPTER XXXV. A New Order of Things--Poor Huck--New Adventures Planned
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tILLUSTRATIONS
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tTom Sawyer
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tTom at Home
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tAunt Polly Beguiled
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tA Good Opportunity
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tWho’s Afraid
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tLate Home
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
+TheAdventuresOfTomSawyerByMarkTwain.txt\tJim
+TheAdventuresOfTomSawyerByMarkTwain.txt\t
