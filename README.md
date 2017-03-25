@@ -1,6 +1,51 @@
 # tiny-Google
 @authors Anthony Poerio (adp59@pitt.edu) and Andrew Masih (anm226@pitt.edu)
 
+## To test the program
+  Main interface for the tinyGoogle client
+
+    Functionality available:
+    ------------------------
+      a.  allow users to index documents
+            ==> arg: -i filepath
+      b.  enter search queries and retrieve relevant document objects
+            ==> arg -s my keywords here
+
+
+    Usage Examples:
+    ---------------
+
+    INDEX -->
+        'Indexing The Count of Monte Cristo'
+        wget https://www.gutenberg.org/files/1184/1184-0.txt
+        mv 1184-0.txt TheCountOfMonteCristo_by_AlexanderDumas.txt
+        python tinyGoogle.py -i TheCountOfMonteCristo_by_AlexanderDumas.txt
+
+    SEARCH -->
+        python tinyGoogle.py -s the count gets revenge and there is much intrigue over many hundreds of pages
+
+## Relevant Files
+### Program entry point
+For the main entry point of the program, please see: `tinyGoogle.py`
+
+### Inverted Index MapReduce Job
+The inverted index MR job is implemented in two files:
+  * Mapper: `inverted_index_mapper.py`
+  * Reducer `inverted_index_reducer.py`
+
+## Ranking and Retrieval MapReduce job
+The ranking and retrieval MR job is implemented in two files:
+  * Mapper: `query_mapper.py`
+  * Reducer: `query_reducer.py`
+
+## Shell Scripts used by tinyGoogle.py
+  * Preprocessing: `preprocess.sh`
+  * Inverted Index MR job: `inverted_index_run.sh`
+  * Ranking and Retrieval MR job: `query_run.sh`
+  * Index a file: `index_file.sh`
+  * Cleanup after the query is performed: `cleanup.sh`
+
+
 ## Components
 ### User Interface (UI)
   * Allow users to index a document
